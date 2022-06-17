@@ -1,0 +1,25 @@
+<header class="main-header">
+  <h1 class="main-header__title">
+    <span class="main-header__title--blue">ProWay</span><span class="main-header__title--orange">Computers</span>
+  </h1>
+  <div class="container-menu">
+    <nav class="main-header__menu">
+      <ul>
+        <li><a routerLink="produtos">Produtos</a></li>
+        <li>
+          <a routerLink="carrinho">
+            <i class="las la-shopping-cart"></i>
+            Carrinho
+            <span class="badge-carrinho">{{ getTotalItens() || 0 }}</span>
+          </a>
+        </li>
+        <li><a routerLink="contato">Contato</a></li>
+        <li><a><i class="lab la-facebook-square"></i></a></li>
+        <li><a><i class="lab la-instagram"></i></a></li>
+        <li><a><i class="lab la-twitter-square"></i></a></li>
+        <li><a><i class="lab la-linkedin"></i></a></li>
+      </ul>
+    </nav>
+    <app-form-busca></app-form-busca>
+  </div>
+</header>
